@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #dbccdc;
+    color: #fff
+}
+
+#product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product {
+    background-color: #b773c8;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product h2 {
+    margin: 0 0 10px;
+} 
+
+.product p {
+    margin: 5px ;
+} 
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #390949;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8f00b3;
+}
+
+#text {
+    font-size: 16px;
+}
+
+#inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#box, #hoverBox, #sizeButton, #text, #inputField {
+    margin-bottom: 20px;
+}
+#box, #hoverBox {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}

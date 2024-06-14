@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./static/style.css">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>ELECTRIC ELECTRONICS</h1>
+    <div id="product-container"></div>
+
+    <!-- FORM MANIPULATION -->
+    <br><br>
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        
+        <button type="submit">Submit</button>
+    </form><br><br>
+
+    <!-- STYLING WITH JAVASCRIPT -->
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div id="hoverBox">Hover over me</div>
+    <button id="sizeButton" onclick="changeSize()">Click me to change size</button>
+    <p id="text">Click the button to change my font size</p>
+    <input type="text" id="inputField" placeholder="Focus on me to change border color">
+
+</body>
+</html>
