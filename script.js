@@ -72,17 +72,22 @@ function changeColor() {
     box.style.backgroundColor = newColor;
 }
 
+let index = 0
+
 function changeSize() {
     const text = document.getElementById('text');
     const sizes = ['16px', '20px', '24px', '28px', '32px'];
     const currentSize = text.style.fontSize;
-    let newSize = sizes[Math.floor(Math.random() * sizes.length)];
+   
+    // let newSize = sizes[Math.floor(Math.random() * sizes.length)];
 
-    while (newSize === currentSize) {
-        newSize = sizes[Math.floor(Math.random() * sizes.length)];
+    // while (newSize === currentSize) {
+    //     newSize = sizes[Math.floor(Math.random() * sizes.length)];
+    // }
+    if (index == sizes.length-1) {
+        index = 0
     }
-
-    text.style.fontSize = newSize;
+    text.style.fontSize = sizes[index++];
 }
 
 document.getElementById('hoverBox').addEventListener('mouseover', function() {
